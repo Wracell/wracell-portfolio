@@ -12,16 +12,16 @@ export default function Home() {
       >
         <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
           <h1 className="text-[50px] text-white font-semibold">
-            Welcome, I'm
+            Welcome, I am
             <span className="text-transparent pl-40 bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
               {" "}
               Rhazel Jay Gumacal
             </span>
           </h1>
           <p className="text-gray-200 text-justify hidden md:block">
-            I'm a 20-year-old BSCS student from Pavia, Iloilo with a strong passion for web development
+            I am a 20-year-old BSCS student from Pavia, Iloilo with a strong passion for web development
             and cybersecurity. Outside of tech, I enjoy beatboxing, watching anime,
-            and playing online games. I'm currently focused on building impactful digital experiences
+            and playing online games. I am currently focused on building impactful digital experiences
             and enhancing my skills in full-stack development.
           </p>
           <div className="flex-col md:flex-row hidden md:flex gap-5">
