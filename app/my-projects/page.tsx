@@ -8,7 +8,7 @@ const Page = () => {
   return (
     <div>
       <div
-        style={{ backgroundImage: "url(/mountains.jpg)" }}
+        style={{ backgroundImage: "url(/Mountains.jpg)" }}
         className="w-screen h-screen flex items-center justify-center bg-center bg-cover"
       >
         <div className="flex flex-col items-center gap-8 max-w-[90%] max-h-[90%]">
