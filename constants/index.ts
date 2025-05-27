@@ -69,18 +69,23 @@ export const Socials = [
 ];
 export const Projects = [
   {
-    title: "Modern Nextjs Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/TaleScape.png",
+    title: "Rekom",
+    text: "",
+    src: "/rekom.png",
   },
   {
-    title: "Space Themed Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    title: "diAIry",
+    text: "",
+    src: "/diAIry.png",
+  },
+  {
+    title: "TwiceLand",
+    text: "",
     src: "/twiceland.png",
   },
   {
-    title: "Space Themed Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    title: "Self Portfolio",
+    text: "",
     src: "/portfolio.png",
   },
 ];
