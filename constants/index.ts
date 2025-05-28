@@ -70,23 +70,23 @@ export const Socials = [
 export const Projects = [
   {
     title: "Rekom",
-    text: "",
+    text: "A movie recommendation website/app with modern design and helps users discover films they love using smart algorithms.",
     src: "/rekom.png",
   },
   {
     title: "diAIry",
-    text: "",
+    text: "A diary website/app where you can write your daily thoughts and experiences.",
     src: "/diAIry.png",
   },
   {
     title: "TwiceLand",
-    text: "",
+    text: "A personalized website that contains information of the K-pop group Twice.",
     src: "/twiceland.png",
   },
   {
-    title: "Self Portfolio",
-    text: "",
-    src: "/portfolio.png",
+    title: "Damuhal's Cage",
+    text: "A modern and responsive coffee shop website with a sleek design and user-friendly interface.",
+    src: "/damuhalcafe.png",
   },
 ];
 
