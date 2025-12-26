@@ -69,24 +69,28 @@ export const Socials = [
 ];
 export const Projects = [
   {
+    title: "TaleScape",
+    text: "A platform to easily generate unique, captivating storybooks for children, families, and friends using an innovative builder.",
+    src: "/TaleScape.png",
+    link: "https://tale-scape.vercel.app/"
+  },
+  {
+    title: "Tanod Monitoring System",
+    text: "A system is developed to monitor the tanod reports within the barangay.",
+    src: "/tanod.png",
+    link: "http://tanod-monitoring.vercel.app/"
+  },
+  {
     title: "Rekom",
     text: "A movie recommendation website/app with modern design and helps users discover films they love using smart algorithms.",
     src: "/rekom.png",
+    link: "https://github.com/mherlie/CCS-230-Final-Project",
   },
   {
     title: "diAIry",
     text: "A diary website/app where you can write your daily thoughts and experiences.",
     src: "/diAIry.png",
-  },
-  {
-    title: "TwiceLand",
-    text: "A personalized website that contains information of the K-pop group Twice.",
-    src: "/twiceland.png",
-  },
-  {
-    title: "Damuhal's Cage",
-    text: "A modern and responsive coffee shop website with a sleek design and user-friendly interface.",
-    src: "/damuhalcafe.png",
+    link: "https://github.com/resolverkatla/Diary-App"
   },
 ];
 
