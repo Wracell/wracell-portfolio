@@ -61,10 +61,12 @@ export const Socials = [
   {
     name: "Facebook",
     src: "/facebook.svg",
+    link: "https://www.facebook.com/wracell1001"
   },
   {
     name: "Instagram",
     src: "/instagram.svg",
+    link: "https://www.instagram.com/rhazeljay/"
   },
 ];
 export const Projects = [

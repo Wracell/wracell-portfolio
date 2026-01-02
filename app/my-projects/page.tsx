@@ -3,7 +3,6 @@
 import ProjectCard from '@/components/ProjectCard'
 import { Projects } from '@/constants'
 import React from 'react'
-// Removed "import Link" because it is not used in this file anymore
 
 const Page = () => {
   return (

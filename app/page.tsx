@@ -19,7 +19,7 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-gray-200 text-justify hidden md:block">
-            I am a 20-year-old BSCS student from Pavia, Iloilo with a passion for technology development.
+            I am a 22-year-old BSCS student from Pavia, Iloilo with a passion for technology development.
             Outside of tech, I enjoy beatboxing, watching anime/kdrama,
             and reading mangas/books. I am currently focused on building impactful digital experiences
             and enhancing my skills in software and website development.
