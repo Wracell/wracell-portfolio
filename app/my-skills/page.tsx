@@ -10,9 +10,13 @@ const Page = () => {
   return (
     <div
       style={{ backgroundImage: "url(/bg-2.jpg)" }}
-      className="h-screen w-screen flex items-center justify-center bg-cover bg-center"
+      // CHANGE 1: 'items-start' pushes content to the top on mobile.
+      // 'md:items-center' keeps it vertically centered on desktop.
+      className="h-screen w-screen flex items-start justify-center bg-cover bg-center md:items-center"
     >
-      <div className="flex flex-col gap-10 md:gap-20 max-w-[95%] md:max-w-[80%] text-center items-center">
+      {/* CHANGE 2: Added 'pt-24' to give space from the top on mobile. */}
+      {/* 'md:pt-0' removes that padding on desktop since it is centered there. */}
+      <div className="flex flex-col gap-10 md:gap-20 max-w-[95%] md:max-w-[80%] text-center items-center pt-24 md:pt-0">
         <div className="flex flex-col items-center gap-2 md:gap-4">
           <h1 className="font-semibold text-white text-[28px] md:text-[50px]">
             Skills{" "}
@@ -64,7 +68,7 @@ const Page = () => {
           autoplay={{
             delay: 0,
             disableOnInteraction: false,
-            reverseDirection: true
+            reverseDirection: true,
           }}
           speed={5000}
           modules={[Autoplay]}

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -7,11 +7,14 @@ export default function Home() {
   return (
     <main className="w-screen h-screen relative overflow-hidden">
       <div
-        className="flex items-center w-full h-full bg-cover bg-center"
+        // CHANGE 1: 'items-start' puts content at top on mobile. 
+        // 'md:items-center' keeps it centered on desktop.
+        className="flex items-start md:items-center w-full h-full bg-cover bg-center"
         style={{ backgroundImage: "url(/main-bg.webp)" }}
       >
         {/* Adjusted padding */}
-        <div className="px-5 md:pl-40 pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
+        {/* CHANGE 2: Added 'pt-24' for top spacing on mobile, 'md:pt-0' to reset it on desktop */}
+        <div className="px-5 pt-24 md:pt-0 md:pl-40 pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
 
           {/* Smaller text on mobile */}
           <h1 className="text-[28px] md:text-[50px] text-white font-semibold leading-tight">
@@ -24,10 +27,11 @@ export default function Home() {
           </h1>
 
           <p className="text-gray-200 text-sm md:text-base text-justify md:text-left max-w-md md:max-w-none">
-            I am a 22-year-old BSCS student from Pavia, Iloilo with a passion for technology development.
-            Outside of tech, I enjoy beatboxing, watching anime/kdrama,
-            and reading mangas/books. I am currently focused on building impactful digital experiences
-            and enhancing my skills in software and website development.
+            I am a 22-year-old BSCS student from Pavia, Iloilo with a passion
+            for technology development. Outside of tech, I enjoy beatboxing,
+            watching anime/kdrama, and reading mangas/books. I am currently
+            focused on building impactful digital experiences and enhancing my
+            skills in software and website development.
           </p>
 
           {/* Desktop Buttons */}
