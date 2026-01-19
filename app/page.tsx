@@ -7,15 +7,11 @@ export default function Home() {
   return (
     <main className="w-screen h-screen relative overflow-hidden">
       <div
-        // CHANGE 1: 'items-start' puts content at top on mobile. 
-        // 'md:items-center' keeps it centered on desktop.
         className="flex items-start md:items-center w-full h-full bg-cover bg-center"
         style={{ backgroundImage: "url(/main-bg.webp)" }}
       >
         {/* Adjusted padding */}
-        {/* CHANGE 2: Added 'pt-24' for top spacing on mobile, 'md:pt-0' to reset it on desktop */}
         <div className="px-5 pt-24 md:pt-0 md:pl-40 pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
-
           {/* Smaller text on mobile */}
           <h1 className="text-[28px] md:text-[50px] text-white font-semibold leading-tight">
             Welcome, I am
@@ -61,7 +57,9 @@ export default function Home() {
       </div>
 
       {/* Mobile Buttons: Positioned bottom-right, distinct from desktop */}
-      <div className="absolute flex bottom-24 right-5 z-[20] flex-col md:hidden gap-3 items-end">
+      {/* CHANGE: Changed 'bottom-24' to 'bottom-36' to move buttons higher. 
+          Use 'bottom-48' or higher if you need them even further up. */}
+      <div className="absolute flex bottom-36 right-5 z-[20] flex-col md:hidden gap-3 items-end">
         <Link
           href="/my-skills"
           className="rounded-[20px] text-center bg-blue-500 px-5 py-2 text-sm text-white w-[140px] shadow-lg"
