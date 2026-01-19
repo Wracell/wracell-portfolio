@@ -11,7 +11,8 @@
   "dependencies": {
     "next": "14.0.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwind-scrollbar-hide": "^4.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -20,10 +21,10 @@
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.1",
-    "framer-motion": "^10.16.4",
+    "framer-motion": "^10.18.0",
     "postcss": "^8",
     "react-icons": "^4.11.0",
-    "swiper": "^11.0.3",
+    "swiper": "^11.2.10",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }

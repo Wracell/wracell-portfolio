@@ -1,75 +1,47 @@
 "use client"
-import React, { useState } from 'react'
+
+import React from 'react'
 import { motion } from 'framer-motion'
-import Link from 'next/link'
 
 interface Props {
-  image: string;
   title: string;
   text: string;
+  image: string;
   link?: string;
+  index: number;
 }
 
-const ProjectCard = ({ image, title, text, link }: Props) => {
-  const [isFlipped, setIsFlipped] = useState(false)
-  const [isAnimating, setIsAnimating] = useState(false)
-
-  function handleFlip() {
-    if (!isAnimating) {
-      setIsFlipped(!isFlipped)
-      setIsAnimating(true)
-    }
-  }
-
+const ProjectCard = ({ title, text, image, link, index }: Props) => {
   return (
-    <div
-      onClick={handleFlip}
-      className='w-[450px] h-[280px] rounded-md cursor-pointer'>
-      <motion.div
-        className='flip-card-inner w-full h-full'
-        initial={false}
-        animate={{ rotateY: isFlipped ? 180 : 360 }}
-        transition={{ duration: 0.6, animationDirection: 'normal' }}
-        onAnimationComplete={() => setIsAnimating(false)}
-      >
-        {/* FRONT OF CARD */}
-        <div
-          style={{ backgroundImage: `url(${image})` }}
-          className='w-full h-full group relative flip-card-front bg-cover bg-center text-white rounded-lg p-4'>
-          <div className='absolute inset-0 w-full h-full rounded-md bg-black opacity-0 group-hover:opacity-40' />
-        </div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
 
-        {/* BACK OF CARD */}
-        <div
-          style={{ backgroundImage: `url(${image})` }}
-          className='w-full h-full group relative flip-card-back bg-cover bg-center text-white rounded-lg p-4'>
+      className="w-[350px] h-[300px] md:h-[420px] md:w-[800px] rounded-2xl overflow-hidden cursor-pointer relative group border border-white/10 shadow-xl"
+    >
+      <div
+        style={{ backgroundImage: `url(${image})` }}
+        className="w-full h-full bg-cover bg-center absolute inset-0"
+      />
 
-          <div className='absolute inset-0 w-full h-full rounded-md bg-black/70 backdrop-blur-[2px] z-[-1]' />
+      <div className="relative z-10 w-full h-full flex flex-col items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-5 text-center">
 
-          {/* 1. Added 'h-full' to make this flex container fill the card height */}
-          <div className='flex flex-col gap-4 z-[30] drop-shadow-lg h-full'>
-            <h1 className='text-white text-2xl font-semibold'>{title}</h1>
-            <p className='text-gray-200 text-[16px]'>
-              {text}
-            </p>
+        <h1 className="text-2xl md:text-3xl font-bold text-white mb-4">
+          {title}
+        </h1>
 
-            {link && (
-              <Link
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={(e) => e.stopPropagation()}
-                // 2. Added 'mt-auto' (push to bottom) and 'self-end' (push to right)
-                className='mt-auto self-end inline-block px-4 py-2 text-white font-semibold rounded hover:bg-blue-500 hover:text-white transition-colors w-max'
-              >
-                View Project
-              </Link>
-            )}
+        <p className="text-sm md:text-base text-gray-200">
+          {text}
+        </p>
 
+        {link && (
+          <div className="mt-5 text-white font-semibold underline hover:text-blue-400 text-lg">
+            Learn more &gt;
           </div>
-        </div>
-      </motion.div>
-    </div>
+        )}
+      </div>
+    </motion.div>
   )
 }
 
