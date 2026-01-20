@@ -37,11 +37,11 @@ const Page = () => {
           <Swiper
             style={{
               // @ts-ignore
-              '--swiper-pagination-color': '#a855f7',
-              '--swiper-pagination-bullet-inactive-color': '#ffffff',
-              '--swiper-pagination-bullet-inactive-opacity': '0.5',
-              '--swiper-pagination-bullet-size': '5px',
-              '--swiper-pagination-bullet-horizontal-gap': '6px'
+              '--swiper-pagination-color': '#a855f7', // Active dot 
+              '--swiper-pagination-bullet-inactive-color': '#ffffff', // Inactive dot (White)
+              '--swiper-pagination-bullet-inactive-opacity': '0.5', // 50% opacity
+              '--swiper-pagination-bullet-size': '5px', // Optional: Change size
+              '--swiper-pagination-bullet-horizontal-gap': '6px' // Optional: Change spacing
             }}
             effect={'coverflow'}
             grabCursor={true}

@@ -10,9 +10,9 @@ const Page = () => {
   return (
     <div
       style={{ backgroundImage: "url(/bg-2.jpg)" }}
-      className="min-h-screen w-full flex items-center justify-center bg-cover bg-center overflow-hidden"
+      className="min-h-screen w-full flex flex-col items-center bg-cover bg-center overflow-hidden"
     >
-      <div className="flex flex-col items-center justify-center gap-10 md:gap-20 w-full px-5 py-20">
+      <div className="flex flex-col items-center gap-10 md:gap-20 w-full px-5 pt-24 md:pt-32 lg:pt-40 pb-10">
 
         {/* TEXT SECTION */}
         <div className="text-center space-y-4">
