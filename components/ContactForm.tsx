@@ -14,7 +14,7 @@ const ContactForm = () => {
           placeholder="Your name"
           name="name"
           // FIX: Changed text-gray-200 to text-gray-900 so user can see what they type
-          className="w-[270px] md:w-full px-3 py-2 text-sm text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded shadow focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-[300px] md:w-full px-3 py-2 text-sm text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded shadow focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
 
@@ -24,7 +24,7 @@ const ContactForm = () => {
           type="email"
           placeholder="Email"
           name="email"
-          className="w-[270px] md:w-full px-3 py-2 text-sm text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded shadow focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-[300px] md:w-full px-3 py-2 text-sm text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded shadow focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
 
@@ -34,7 +34,7 @@ const ContactForm = () => {
           placeholder="Your message"
           name="message"
           rows={4} // Give it some default height
-          className="w-[270px] md:w-full px-3 py-2 text-sm text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded shadow focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+          className="w-[300px] md:w-full px-3 py-2 text-sm text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded shadow focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
         />
       </div>
 
