@@ -11,7 +11,7 @@ export default function Home() {
         style={{ backgroundImage: "url(/main-bg.webp)" }}
       >
         {/* Adjusted padding */}
-        <div className="px-5 pt-24 md:pt-0 md:pl-40 pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
+        <div className="px-5 pt-40 md:pt-0 md:pl-40 pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
           {/* Smaller text on mobile */}
           <h1 className="text-[28px] md:text-[50px] text-white font-semibold leading-tight">
             Welcome, I am
@@ -56,7 +56,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="absolute flex bottom-52 right-5 z-[20] flex-col md:hidden gap-3 items-end">
+      <div className="absolute flex bottom-72 right-5 z-[20] flex-col md:hidden gap-3 items-end">
         <Link
           href="/my-skills"
           className="rounded-[20px] text-center bg-blue-500 px-5 py-2 text-sm text-white w-[140px] shadow-lg"
