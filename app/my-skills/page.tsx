@@ -23,7 +23,7 @@ const Page = () => {
             </span>
             Technologies
           </h1>
-          <p className="text-gray-400 text-sm md:text-xl max-w-[300px] md:max-w-none mx-auto">
+          <p className="text-gray-400 text-sm md:text-xl max-w-[300px] md:max-w-none mx-auto pb-32 md:pb-0">
             Tools and technologies I use and am familiar with.
           </p>
         </div>
