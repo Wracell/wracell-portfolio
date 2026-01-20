@@ -56,10 +56,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Mobile Buttons: Positioned bottom-right, distinct from desktop */}
-      {/* CHANGE: Changed 'bottom-24' to 'bottom-36' to move buttons higher. 
-          Use 'bottom-48' or higher if you need them even further up. */}
-      <div className="absolute flex bottom-36 right-5 z-[20] flex-col md:hidden gap-3 items-end">
+      <div className="absolute flex bottom-52 right-5 z-[20] flex-col md:hidden gap-3 items-end">
         <Link
           href="/my-skills"
           className="rounded-[20px] text-center bg-blue-500 px-5 py-2 text-sm text-white w-[140px] shadow-lg"
