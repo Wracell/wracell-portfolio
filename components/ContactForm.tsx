@@ -13,7 +13,6 @@ const ContactForm = () => {
           type="text"
           placeholder="Your name"
           name="name"
-          // FIX: Changed text-gray-200 to text-gray-900 so user can see what they type
           className="w-[300px] md:w-full px-3 py-2 text-sm text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded shadow focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
@@ -28,12 +27,12 @@ const ContactForm = () => {
         />
       </div>
 
-      {/* Message Input - Changed to Textarea for better UX */}
+      {/* Message Input */}
       <div className="mb-3">
         <textarea
           placeholder="Your message"
           name="message"
-          rows={4} // Give it some default height
+          rows={4}
           className="w-[300px] md:w-full px-3 py-2 text-sm text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded shadow focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
         />
       </div>
