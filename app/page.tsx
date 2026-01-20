@@ -8,14 +8,10 @@ export default function Home() {
     <main className="w-screen h-screen relative overflow-hidden">
       <div
         className="flex items-start md:items-center w-full h-full bg-cover bg-center"
-        style={{ backgroundImage: "url(/main-bg.webp)" }}
-      >
-        {/* Adjusted padding */}
+        style={{ backgroundImage: "url(/main-bg.webp)" }}>
         <div className="px-5 pt-40 md:pt-0 md:pl-40 pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
-          {/* Smaller text on mobile */}
           <h1 className="text-[28px] md:text-[50px] text-white font-semibold leading-tight">
             Welcome, I am
-            {/* Blocks on mobile (new line), inline on desktop */}
             <span className="text-transparent block md:inline pl-0 md:pl-40 bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
               {" "}
               Rhazel Jay Gumacal

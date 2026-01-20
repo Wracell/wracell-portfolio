@@ -16,15 +16,9 @@ const Page = () => {
   return (
     <div
       style={{ backgroundImage: "url(/Mountains.jpg)" }}
-      // CHANGE 1: 'items-start' aligns the inner wrapper to the top on mobile.
-      // 'md:items-center' centers it on desktop.
       className="w-screen h-screen flex items-start justify-center bg-center bg-cover overflow-hidden md:items-center"
     >
-      <div
-        // CHANGE 2: 'justify-start' ensures content stacks from the top inside this full-height container on mobile.
-        // 'md:justify-center' keeps it centered on desktop.
-        className="flex flex-col items-center justify-start md:justify-center w-full max-w-6xl px-4 h-full pt-24 md:pt-0 pb-10"
-      >
+      <div className="flex flex-col items-center justify-start md:justify-center w-full max-w-6xl px-4 h-full pt-24 md:pt-0 pb-10">
 
         <div className="flex flex-col items-center gap-3 mb-8 relative z-20">
           <h1 className="font-semibold text-white text-[28px] md:text-[50px] text-center">

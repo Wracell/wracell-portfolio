@@ -14,7 +14,6 @@ const Page = () => {
     >
       <div className="flex flex-col w-full h-full md:h-auto gap-24 md:gap-20 max-w-[95%] md:max-w-[80%] text-center items-center pt-36 md:pt-0 pb-10 md:pb-0">
 
-        {/* TEXT SECTION: Stays at the top because of the parent's flex direction */}
         <div className="flex flex-col items-center gap-2 md:gap-4 flex-none">
           <h1 className="font-semibold text-white text-[28px] md:text-[50px]">
             Skills{" "}
