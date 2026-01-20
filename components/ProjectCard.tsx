@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 interface Props {
   title: string;
@@ -36,9 +37,14 @@ const ProjectCard = ({ title, text, image, link, index }: Props) => {
         </p>
 
         {link && (
-          <div className="mt-5 text-white font-semibold underline hover:text-blue-400 text-lg">
-            Learn more &gt;
-          </div>
+          <Link
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 text-white font-semibold hover:text-blue-500 text-lg"
+          >
+            Learn more
+          </Link>
         )}
       </div>
     </motion.div>

@@ -35,6 +35,14 @@ const Page = () => {
 
         <div className="w-[350px] h-auto md:h-[420px] md:w-[800px] flex items-center justify-center">
           <Swiper
+            style={{
+              // @ts-ignore
+              '--swiper-pagination-color': '#a855f7',
+              '--swiper-pagination-bullet-inactive-color': '#ffffff',
+              '--swiper-pagination-bullet-inactive-opacity': '0.5',
+              '--swiper-pagination-bullet-size': '5px',
+              '--swiper-pagination-bullet-horizontal-gap': '6px'
+            }}
             effect={'coverflow'}
             grabCursor={true}
             centeredSlides={true}
