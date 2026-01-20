@@ -11,7 +11,7 @@ const Page = () => {
         style={{ backgroundImage: "url(/atombg-comp.webp)" }}
         // 1. Adjusted sizing: 90% width on mobile, 80% on desktop.
         // 2. Added overflow-y-auto so if the screen is tiny, you can scroll inside the card.
-        className="relative h-[45%] w-[85%] md:h-[60%] md:w-[70%] bg-cover bg-center md:bg-center rounded-xl border border-white shadow-2xl overflow-hidden"
+        className="relative h-[45%] w-[85%] md:h-[60%] md:w-[70%] bg-cover bg-center md:bg-center bottom-20 md:bottom-0 rounded-xl border border-white shadow-2xl overflow-hidden"
       >
         {/* Responsive Wrapper:
            - Mobile: inset-0 (full size), flexbox, black overlay for readability.
