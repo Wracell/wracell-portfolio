@@ -27,7 +27,7 @@ const Page = () => {
       >
 
         <div className="flex flex-col items-center gap-3 mb-8 relative z-20">
-          <h1 className="font-semibold text-white text-3xl md:text-5xl lg:text-6xl text-center">
+          <h1 className="font-semibold text-white text-[28px] md:text-[50px] text-center">
             My{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
               {" "}
