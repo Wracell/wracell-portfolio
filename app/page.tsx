@@ -13,9 +13,10 @@ export default function Home() {
         {/* TEXT SECTION */}
         <div className="flex flex-col gap-5 text-center md:text-left">
           <h1 className="text-[28px] sm:text-[36px] md:text-[50px] text-white font-semibold leading-tight">
-            Welcome, I am
+            Welcome!
             <span className="text-transparent block md:inline md:pl-4 bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
-              Rhazel Jay Gumacal
+              <br></br>
+              I am Rhazel Jay Gumacal
             </span>
           </h1>
 
