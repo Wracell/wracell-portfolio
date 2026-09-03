@@ -1,11 +1,19 @@
+"use client";
+
 import React from "react";
 
 const ContactForm = () => {
   return (
-    <form className="w-full">
-      <h2 className="text-2xl text-center font-bold mb-5 text-white shadow-black drop-shadow-md">
-        Contact Me
+    <form className="w-full max-w-[380px] mx-auto">
+      <h2 className="text-2xl md:text-3xl text-center font-bold mb-2 text-white tracking-tight">
+        Contact{" "}
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
+          Me
+        </span>
       </h2>
+      <p className="text-center text-gray-400 text-xs md:text-sm font-light mb-6">
+        Have an idea or want to collaborate? Let&apos;s talk.
+      </p>
 
       {/* Name Input */}
       <div className="mb-3">
@@ -13,7 +21,7 @@ const ContactForm = () => {
           type="text"
           placeholder="Your name"
           name="name"
-          className="w-[300px] md:w-full px-3 py-2 text-sm text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded shadow focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="glass-input w-full px-4 py-3 text-sm rounded-xl"
         />
       </div>
 
@@ -23,23 +31,26 @@ const ContactForm = () => {
           type="email"
           placeholder="Email"
           name="email"
-          className="w-[300px] md:w-full px-3 py-2 text-sm text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded shadow focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="glass-input w-full px-4 py-3 text-sm rounded-xl"
         />
       </div>
 
       {/* Message Input */}
-      <div className="mb-3">
+      <div className="mb-4">
         <textarea
           placeholder="Your message"
           name="message"
           rows={4}
-          className="w-[300px] md:w-full px-3 py-2 text-sm text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded shadow focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+          className="glass-input w-full px-4 py-3 text-sm rounded-xl resize-none"
         />
       </div>
 
-      <div className="flex justify-center pt-2">
-        <button className="w-full md:w-auto px-8 py-3 text-sm font-bold rounded text-white uppercase transition-all duration-150 ease-linear bg-blue-600 hover:bg-blue-500 hover:shadow-lg active:bg-blue-700">
-          Send message
+      <div className="flex justify-center pt-1">
+        <button
+          type="submit"
+          className="w-full rounded-xl btn-gradient px-8 py-3 text-sm font-semibold tracking-wide"
+        >
+          <span>Send message</span>
         </button>
       </div>
     </form>

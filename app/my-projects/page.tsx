@@ -16,32 +16,31 @@ const Page = () => {
   return (
     <div
       style={{ backgroundImage: "url(/Mountains.jpg)" }}
-      className="w-screen h-screen flex items-start justify-center bg-center bg-cover overflow-hidden md:items-center"
+      className="w-full h-screen flex items-start justify-center bg-center bg-cover overflow-hidden md:items-center"
     >
-      <div className="flex flex-col items-center justify-start md:justify-center w-full max-w-6xl px-4 h-full pt-24 md:pt-0 pb-10">
+      <div className="flex flex-col items-center justify-start md:justify-center w-full max-w-6xl px-4 sm:px-6 h-full pt-24 md:pt-0 pb-24 md:pb-10">
 
-        <div className="flex flex-col items-center gap-3 mb-8 relative z-20">
-          <h1 className="font-semibold text-white text-[28px] md:text-[50px] text-center">
+        <div className="flex flex-col items-center gap-2 sm:gap-3 mb-6 sm:mb-8 relative z-20">
+          <h1 className="font-bold text-white text-[28px] md:text-[50px] text-center tracking-tight animate-fade-in-up">
             My{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
-              {" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
               Projects
             </span>
           </h1>
-          <p className="text-gray-400 text-sm md:text-lg text-center max-w-[90%] md:max-w-full">
+          <p className="text-gray-400 text-sm md:text-lg text-center max-w-[90%] md:max-w-full font-light animate-fade-in-up delay-100">
             These are the projects I have participated in building.
           </p>
         </div>
 
-        <div className="w-[350px] h-auto md:h-[420px] md:w-[800px] flex items-center justify-center">
+        <div className="w-full max-w-[350px] sm:max-w-[500px] md:max-w-[800px] h-auto md:h-[420px] flex items-center justify-center animate-fade-in-up delay-200">
           <Swiper
             style={{
               // @ts-ignore
               '--swiper-pagination-color': '#a855f7', // Active dot 
               '--swiper-pagination-bullet-inactive-color': '#ffffff', // Inactive dot (White)
-              '--swiper-pagination-bullet-inactive-opacity': '0.5', // 50% opacity
-              '--swiper-pagination-bullet-size': '5px', // Optional: Change size
-              '--swiper-pagination-bullet-horizontal-gap': '6px' // Optional: Change spacing
+              '--swiper-pagination-bullet-inactive-opacity': '0.4', // 40% opacity
+              '--swiper-pagination-bullet-size': '6px',
+              '--swiper-pagination-bullet-horizontal-gap': '6px'
             }}
             effect={'coverflow'}
             grabCursor={true}
@@ -67,13 +66,14 @@ const Page = () => {
             className="swiper_container w-full py-10"
           >
             {Projects.map((project, index) => (
-              <SwiperSlide key={index} className="w-[280px] md:w-[300px]">
+              <SwiperSlide key={index} className="w-[260px] sm:w-[280px] md:w-[300px]">
                 <ProjectCard
                   index={index}
                   title={project.title}
                   text={project.text}
                   image={project.src}
                   link={project.link}
+                  tags={project.tags}
                 />
               </SwiperSlide>
             ))}
