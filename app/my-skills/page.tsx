@@ -48,13 +48,13 @@ const Page = () => {
             <div key={category} className="space-y-4">
 
               {/* Skills Grid */}
-              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 sm:gap-3 md:gap-4">
+              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
                 {skills.map((skill) => {
                   const idx = globalIndex++;
                   return (
                     <div
                       key={skill.name}
-                      className="glass-card flex flex-col items-center justify-center gap-2 py-4 px-2 md:py-5 md:px-3 cursor-default animate-fade-in-up group"
+                      className="glass-card flex flex-col items-center justify-center gap-2 py-4 px-2 md:py-5 md:px-3 cursor-default group"
                       style={{ animationDelay: `${idx * 80}ms` }}
                     >
                       <div className="relative h-9 w-9 md:h-12 md:w-12 transition-transform duration-300 group-hover:scale-110">

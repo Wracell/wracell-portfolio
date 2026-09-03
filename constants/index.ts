@@ -2,14 +2,14 @@ import { RxHome, RxPerson, RxDashboard, RxClipboard } from "react-icons/rx";
 
 export const SkillData = [
   {
-    name: "Html 5",
+    name: "HTML",
     Image: "/html.png",
     width: 80,
     height: 80,
     category: "Frontend",
   },
   {
-    name: "Css",
+    name: "CSS",
     Image: "/css.png",
     width: 80,
     height: 80,
@@ -23,7 +23,7 @@ export const SkillData = [
     category: "Frontend",
   },
   {
-    name: "Tailwind Css",
+    name: "Tailwind CSS",
     Image: "/tailwind.png",
     width: 80,
     height: 80,
@@ -44,7 +44,7 @@ export const SkillData = [
     category: "Frontend",
   },
   {
-    name: "Next js",
+    name: "NextJS",
     Image: "/next.png",
     width: 80,
     height: 80,
